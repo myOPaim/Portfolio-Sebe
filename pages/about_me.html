@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sebe Cabuy | Digital & Graphic Designer</title>
+    
+      <!-- Adobe Soleil -->
+      <link rel="stylesheet" href="https://use.typekit.net/hlc6ddt.css">
+      <link href="css/reset_plus.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+    </head>
+
+   
+    
+    <body>
+
+  <header class="site-header-about">
+    <div class="header-text-right-about">
+      <h1>Sebe Cabuy</h1>
+      <p class="subtitle">About me</p>
+    </div>
+    <img class="header_img" src="../images/website illustraties-01.png">
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="../index.html">
+            <span class="nav-text2">Home</span>
+            <img src="../images/website illustraties-07.png" alt="Home" class="nav-icon">
+          </a>
+        </li>
+    
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="about-card">
+        <img src="../images/Avatar final-02-02.jpg" alt="Sebe Cabuy">
+        <h2>About me</h2>
+        <p>Tekst…</p>
+      </div>
+
+      <div class="gallery-slider">
+        
+        <div class="slides">
+          <img src="../images/illustratiesssss-01.png" class="slide visible">
+          <img src="../images/illustratiesssss-02.png" class="slide">
+          <img src="../images/illustratiesssss-03.png" class="slide">
+          <img src="../images/illustratiesssss-04.png" class="slide">
+          <img src="../images/illustratiesssss-05.png" class="slide">
+        </div>
+        <button class="prev">←</button>
+        <button class="next">→</button>
+      </div>
+
+      <p class="more">More To Come…</p>
+    </section>
+    <a href="#" class="back-to-top2">↑ <span>Back To Top</span></a>
+  </main>
+
+  <footer class="site-footer">
+    
+
+    <div class="social">
+      <a href="#"><img src="../images/website illustraties-05.png" alt="Instagram"></a>
+      <a href="#"><img src="../images/website illustraties-06.png" alt="YouTube"></a>
+    </div>
+
+    <address class="contact">
+      <p>Sebe Cabuy</p>
+      <a href="mailto:sebe.cabuy@gmail.com">sebe.cabuy@gmail.com</a><br>
+      <p>+32 472 072 012</p>
+    </address>
+  </footer>
+  <script>
+    const slides = Array.from(document.querySelectorAll('.gallery-slider .slide'));
+    let idx = 0;
+    document.querySelector('.gallery-slider .next').onclick = () => {
+      slides[idx].classList.remove('visible');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('visible');
+    };
+    document.querySelector('.gallery-slider .prev').onclick = () => {
+      slides[idx].classList.remove('visible');
+      idx = (idx - 1 + slides.length) % slides.length;
+      slides[idx].classList.add('visible');
+    };
+  </script>
+  
+</body>
+</html>
