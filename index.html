@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sebe Cabuy | Digital & Graphic Designer</title>
+
+      <!-- Adobe Soleil -->
+      <link rel="stylesheet" href="https://use.typekit.net/hlc6ddt.css">
+      <link href="css/reset_plus.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" /> 
+    </head>
+    
+    <!-- direct ná je <body> of ín je <header> -->
+
+  
+    
+
+    <body>
+    
+      <header class="site-header">
+        <div class="header-text">
+          <h1>Sebe Cabuy</h1>
+          <p class="subtitle">Digital &amp; Graphic Designer</p>
+        </div>
+    <img class="header_img" src="images/website illustraties-01.png">
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <span class="nav-text">Home</span>
+                <img src="images/website illustraties-07.png" alt="Home" class="nav-icon">
+              </a>
+            </li>
+            <li>
+              <a href="pages/about_me.html">
+                <span class="nav-text">About me</span>
+                <img src="images/website illustraties-08.png" alt="About me" class="nav-icon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <section class="projects">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <img src="images/31.jpg" alt="Project thumbnail">
+            <div class="project-info">
+              <h2>Project: Name project</h2>
+              <p>uitleg opdracht…</p>
+              <a href="#" class="btn-arrow">→</a>
+            </div>
+          </article>
+    
+          <!-- Project 2 (copy/paste .project-card as needed) -->
+          <article class="project-card">
+            <img src="images/Poster 5.png" alt="Project thumbnail">
+            <div class="project-info">
+              <h2>Project: Name project</h2>
+              <p>uitleg opdracht…</p>
+              <a href="#" class="btn-arrow">→</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/BOEK COVER.jpg" alt="Project thumbnail">
+            <div class="project-info">
+              <h2>Project: Name project</h2>
+              <p>uitleg opdracht…</p>
+              <a href="#" class="btn-arrow">→</a>
+            </div>
+          </article>
+    
+          <!-- etc… -->
+    
+          <p class="more">More To Come…</p>
+        </section>
+        <a href="#" class="back-to-top">↑ <span>Back To Top</span></a>
+        <img class="main_img" src="images/website illustraties-03-03.png">
+      </main>
+    
+      <footer class="site-footer">
+        <div class="social">
+          <a href="#"><img src="images/website illustraties-05.png" alt="Instagram"></a>
+          <a href="#"><img src="images/website illustraties-06.png" alt="YouTube"></a>
+        </div>
+    
+        <address class="contact">
+          <p>Sebe Cabuy</p>
+          <a href="mailto:sebe.cabuy@gmail.com">sebe.cabuy@gmail.com</a><br>
+          <p>+32 472 072 012</p>
+        </address>
+      </footer>
+      <script>
+        const slides = Array.from(document.querySelectorAll('.gallery-slider .slide'));
+        let idx = 0;
+        document.querySelector('.gallery-slider .next').onclick = () => {
+          slides[idx].classList.remove('visible');
+          idx = (idx + 1) % slides.length;
+          slides[idx].classList.add('visible');
+        };
+        document.querySelector('.gallery-slider .prev').onclick = () => {
+          slides[idx].classList.remove('visible');
+          idx = (idx - 1 + slides.length) % slides.length;
+          slides[idx].classList.add('visible');
+        };
+      </script>
+      
+    </body>
+    </html>
+    
